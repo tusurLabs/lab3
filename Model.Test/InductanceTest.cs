@@ -13,6 +13,7 @@ public class InductanceTest
     public void SetActiveResistance_Int_ArgumentOutOfRangeException()
     {
         var inductance = new Inductance();
+        
         Assert.Throws<ArgumentOutOfRangeException>(() => inductance.ActiveResistance = -1);
     }
     [Fact]
